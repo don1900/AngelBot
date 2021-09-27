@@ -1,1 +1,1 @@
-worker: bash angelbot
+worker: bash Angelbot
