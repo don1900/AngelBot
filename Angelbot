@@ -7,7 +7,7 @@ _repolink () {
     if [[ $ANGEL_REPO == "AngelBot" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9JblZhZGUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
-    elif [[ $ANGEL_REPO == "AngelBot" ]]
+    elif [[ $ANGEL_REPO == "Angelbot" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZVZhZGVycy9JblZhZGUvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $ANGEL_REPO =~ $regex ]]
@@ -39,6 +39,7 @@ start_bot () {
     echo "  • Starting AngelBot •  "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m hellbot
 }
 
 start_bot
