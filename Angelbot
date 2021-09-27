@@ -39,7 +39,6 @@ start_bot () {
     echo "  • Starting AngelBot •  "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m angelbot
 }
 
 start_bot
